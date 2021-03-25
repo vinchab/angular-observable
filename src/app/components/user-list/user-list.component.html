@@ -1,0 +1,8 @@
+<h2>List des Utilisateurs</h2>
+<div *ngIf="users$ | async as users">
+    <div *ngFor="let user of users">
+        {{ user.name }}
+        {{ user.firstname }}
+        {{ user.email }}
+    </div>
+</div>

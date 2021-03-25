@@ -1,0 +1,9 @@
+<h2>List des Publications</h2>
+
+<div *ngIf="publications$ | async as publications">
+    <div *ngFor="let publication of publications" style="margin-bottom: 20px;">
+        {{ publication.title }}<br>
+        {{ publication.createAt | date:'dd MMM yyyy - HH:mm' }}<br>
+        {{ publication.text }}<br>
+    </div>
+</div>

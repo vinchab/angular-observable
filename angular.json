@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "Angular-Mysql"
+    }
+  },
+  "defaultProject": "Angular-Mysql",
+  "cli": {
+    "analytics": false
+  }
 }

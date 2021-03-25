@@ -1,0 +1,9 @@
+<h2>Favoris utilisateur list par token</h2>
+<div *ngIf="favorites$ | async as favorites">
+    <div *ngFor="let item of favorites" style="margin-bottom: 20px;">
+        {{ item.email }} <br>
+        {{ item.name || 'NULL'}}
+        {{ item.firstname || 'NULL'}} <br>
+        {{ item.createAt | date:'dd MMM yyyy - HH:mm' }}
+    </div>
+</div>

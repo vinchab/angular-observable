@@ -1,0 +1,6 @@
+<div *ngIf="favoritePub$ | async as favorites">
+    <div *ngFor="let favorite of favorites">
+        {{ favorite.publication_title }} - {{ favorite.publication_createAt | date:'dd MMM yyyy - HH:mm' }} <br>
+        {{ favorite.publication_text }}
+    </div>
+</div>
