@@ -8,6 +8,7 @@ import { UserListComponent } from './components/user-list/user-list.component';
 import { PublicationListComponent } from './components/publication-list/publication-list.component';
 import { FavoritesUsersComponent } from './components/favorites-users/favorites-users.component';
 import { FavoritePublicationsComponent } from './components/favorite-publications/favorite-publications.component';
+import { TestComponent } from './components/test/test.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { FavoritePublicationsComponent } from './components/favorite-publication
     UserListComponent,
     PublicationListComponent,
     FavoritesUsersComponent,
-    FavoritePublicationsComponent
+    FavoritePublicationsComponent,
+    TestComponent
   ],
   imports: [
     BrowserModule,

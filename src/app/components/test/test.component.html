@@ -1,0 +1,7 @@
+<h2>Test Favorite Publications - sauce Nico</h2>
+<div *ngIf=" testFavoritePub$ | async as favorites">
+    <div *ngFor="let favorite of favorites" style="margin-bottom: 20px;">
+        {{ favorite.publication_title }} - {{ favorite.publication_createAt }} <br>
+        {{ favorite.publication_text }}
+    </div>
+</div>

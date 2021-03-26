@@ -23,6 +23,7 @@ export class UserService {
     this._http.get<IUser[]>('http://localhost:3000/user').pipe(
       tap(users => console.log('Users => ', users)),
 
+      //pour chaque elemenent dans la liste (users) je crée un nouvel user typé
       map(users => users.map(user => new User(user)))
      
     ).subscribe(
@@ -34,13 +35,4 @@ export class UserService {
     return this.users$
   }
 
-  public getUserById$(id: number): Observable<User> {
-    return this.users$.pipe(
-      map(users => users.find(user => user.id === id))
-    )
-  }
-
-  public refreshFetch(){
-    this.fetch()
-  }
 }
